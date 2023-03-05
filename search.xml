@@ -4,9 +4,187 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/FastJsonUtils/"/>
+      <url>/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/FastJsonUtils/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>YamlUtils</title>
+      <link href="/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/YamlUtils/"/>
+      <url>/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/YamlUtils/</url>
+      
+        <content type="html"><![CDATA[<h1 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h1><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://www.shuzhiduo.com/A/pRdBepp15n/">https://www.shuzhiduo.com/A/pRdBepp15n/</a></p><p><a href="https://blog.csdn.net/u013189824/article/details/100543280">https://blog.csdn.net/u013189824/article/details/100543280</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> utils </category>
+          
+          <category> YamlUtils </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> utils </tag>
+            
+            <tag> YamlUtils </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HttpUtils</title>
+      <link href="/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/HttpUtils/"/>
+      <url>/2023/03/05/Java%E5%B7%A5%E5%85%B7%E5%8C%85/HttpUtils/</url>
+      
+        <content type="html"><![CDATA[<h1 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>httpclient<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>4.5.13<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><h2 id="HttpClientResult"><a href="#HttpClientResult" class="headerlink" title="HttpClientResult"></a>HttpClientResult</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> lombok.AllArgsConstructor;</span><br><span class="line"><span class="keyword">import</span> lombok.Data;</span><br><span class="line"><span class="keyword">import</span> lombok.NoArgsConstructor;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.io.Serializable;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Description: 封装httpClient响应结果</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> yilan0916</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2023/3/5</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HttpClientResult</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 响应状态码</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> code;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 响应数据</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String content;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="HttpClientUtils"><a href="#HttpClientUtils" class="headerlink" title="HttpClientUtils"></a>HttpClientUtils</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.http.HttpStatus;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.NameValuePair;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.config.RequestConfig;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.entity.UrlEncodedFormEntity;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.methods.CloseableHttpResponse;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.methods.HttpEntityEnclosingRequestBase;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.methods.HttpGet;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.methods.HttpRequestBase;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.client.utils.URIBuilder;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.impl.client.CloseableHttpClient;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.impl.client.HttpClients;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.message.BasicNameValuePair;</span><br><span class="line"><span class="keyword">import</span> org.apache.http.util.EntityUtils;</span><br><span class="line"><span class="keyword">import</span> java.io.IOException;</span><br><span class="line"><span class="keyword">import</span> java.io.UnsupportedEncodingException;</span><br><span class="line"><span class="keyword">import</span> java.util.ArrayList;</span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"><span class="keyword">import</span> java.util.Map;</span><br><span class="line"><span class="keyword">import</span> java.util.Set;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Description: HttpClient工具包</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@author</span> yilan0916</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@date</span> 2023/3/5</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HttpClientUtils</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">String</span> <span class="variable">ENCODING</span> <span class="operator">=</span> <span class="string">&quot;UTF-8&quot;</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">CONNECT_TIMEOUT</span> <span class="operator">=</span> <span class="number">6000</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">final</span> <span class="type">int</span> <span class="variable">SOCKET_TIMEOUT</span> <span class="operator">=</span> <span class="number">6000</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> HttpClientResult <span class="title function_">sendGet</span><span class="params">(String url)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        <span class="keyword">return</span> sendGet(url, <span class="literal">null</span>, <span class="literal">null</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> HttpClientResult <span class="title function_">sendGet</span><span class="params">(String url, Map&lt;String, String&gt; params)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        <span class="keyword">return</span> sendGet(url, <span class="literal">null</span>, params);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> HttpClientResult <span class="title function_">sendGet</span><span class="params">(String url, Map&lt;String, String&gt; headers, Map&lt;String, String&gt; params)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        <span class="comment">// 创建httpClient对象</span></span><br><span class="line">        <span class="type">CloseableHttpClient</span> <span class="variable">httpClient</span> <span class="operator">=</span> HttpClients.createDefault();</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建访问的地址</span></span><br><span class="line">        <span class="type">URIBuilder</span> <span class="variable">uriBuilder</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">URIBuilder</span>(url);</span><br><span class="line">        <span class="keyword">if</span> (params != <span class="literal">null</span>) &#123;</span><br><span class="line">            Set&lt;Map.Entry&lt;String, String&gt;&gt; entrySet = params.entrySet();</span><br><span class="line">            <span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : entrySet) &#123;</span><br><span class="line">                uriBuilder.setParameter(entry.getKey(), entry.getValue());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建http对象</span></span><br><span class="line">        <span class="type">HttpGet</span> <span class="variable">httpGet</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">HttpGet</span>(uriBuilder.build());</span><br><span class="line"></span><br><span class="line">        <span class="comment">/**</span></span><br><span class="line"><span class="comment">         * setConnectTimeout：设置连接超时时间，单位毫秒。</span></span><br><span class="line"><span class="comment">         * setConnectionRequestTimeout：设置从connect Manager(连接池)获取Connection</span></span><br><span class="line"><span class="comment">         * 超时时间，单位毫秒。这个属性是新加的属性，因为目前版本是可以共享连接池的。</span></span><br><span class="line"><span class="comment">         * setSocketTimeout：请求获取数据的超时时间(即响应时间)，单位毫秒。 如果访问一个接口，多少时间内无法返回数据，就直接放弃此次调用。</span></span><br><span class="line"><span class="comment">         */</span></span><br><span class="line">        <span class="type">RequestConfig</span> <span class="variable">requestConfig</span> <span class="operator">=</span> RequestConfig.custom().setConnectTimeout(CONNECT_TIMEOUT).setSocketTimeout(SOCKET_TIMEOUT).build();</span><br><span class="line">        httpGet.setConfig(requestConfig);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 设置请求头</span></span><br><span class="line">        packageHeader(headers, httpGet);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 创建httpResponse对象</span></span><br><span class="line">        <span class="type">CloseableHttpResponse</span> <span class="variable">httpResponse</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            <span class="comment">// 执行请求并获得响应结果</span></span><br><span class="line">            <span class="keyword">return</span> getHttpClientResult(httpResponse, httpClient, httpGet);</span><br><span class="line">        &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">            <span class="comment">// 释放资源</span></span><br><span class="line">            release(httpResponse, httpClient);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Description: 封装请求头</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> params</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpMethod</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">packageHeader</span><span class="params">(Map&lt;String, String&gt; params, HttpRequestBase httpMethod)</span> &#123;</span><br><span class="line">        <span class="comment">// 封装请求头</span></span><br><span class="line">        <span class="keyword">if</span> (params != <span class="literal">null</span>) &#123;</span><br><span class="line">            Set&lt;Map.Entry&lt;String, String&gt;&gt; entrySet = params.entrySet();</span><br><span class="line">            <span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : entrySet) &#123;</span><br><span class="line">                <span class="comment">// 设置到请求头到HttpRequestBase对象中</span></span><br><span class="line">                httpMethod.setHeader(entry.getKey(), entry.getValue());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Description: 封装请求参数</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> params</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpMethod</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> UnsupportedEncodingException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">packageParam</span><span class="params">(Map&lt;String, String&gt; params, HttpEntityEnclosingRequestBase httpMethod)</span></span><br><span class="line">            <span class="keyword">throws</span> UnsupportedEncodingException &#123;</span><br><span class="line">        <span class="comment">// 封装请求参数</span></span><br><span class="line">        <span class="keyword">if</span> (params != <span class="literal">null</span>) &#123;</span><br><span class="line">            List&lt;NameValuePair&gt; nvps = <span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;NameValuePair&gt;();</span><br><span class="line">            Set&lt;Map.Entry&lt;String, String&gt;&gt; entrySet = params.entrySet();</span><br><span class="line">            <span class="keyword">for</span> (Map.Entry&lt;String, String&gt; entry : entrySet) &#123;</span><br><span class="line">                nvps.add(<span class="keyword">new</span> <span class="title class_">BasicNameValuePair</span>(entry.getKey(), entry.getValue()));</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="comment">// 设置到请求的http对象中</span></span><br><span class="line">            httpMethod.setEntity(<span class="keyword">new</span> <span class="title class_">UrlEncodedFormEntity</span>(nvps, ENCODING));</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Description: 获得响应结果</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpResponse</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpClient</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpMethod</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> Exception</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> HttpClientResult <span class="title function_">getHttpClientResult</span><span class="params">(CloseableHttpResponse httpResponse,</span></span><br><span class="line"><span class="params">                                                       CloseableHttpClient httpClient, HttpRequestBase httpMethod)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">        <span class="comment">// 执行请求</span></span><br><span class="line">        httpResponse = httpClient.execute(httpMethod);</span><br><span class="line"></span><br><span class="line">        <span class="comment">// 获取返回结果</span></span><br><span class="line">        <span class="keyword">if</span> (httpResponse != <span class="literal">null</span> &amp;&amp; httpResponse.getStatusLine() != <span class="literal">null</span>) &#123;</span><br><span class="line">            <span class="type">String</span> <span class="variable">content</span> <span class="operator">=</span> <span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="keyword">if</span> (httpResponse.getEntity() != <span class="literal">null</span>) &#123;</span><br><span class="line">                content = EntityUtils.toString(httpResponse.getEntity(), ENCODING);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">HttpClientResult</span>(httpResponse.getStatusLine().getStatusCode(), content);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">HttpClientResult</span>(HttpStatus.SC_INTERNAL_SERVER_ERROR, <span class="string">&quot;服务器内部错误&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * Description: 释放资源</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpResponse</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> httpClient</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@throws</span> IOException</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">release</span><span class="params">(CloseableHttpResponse httpResponse, CloseableHttpClient httpClient)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 释放资源</span></span><br><span class="line">        <span class="keyword">if</span> (httpResponse != <span class="literal">null</span>) &#123;</span><br><span class="line">            httpResponse.close();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (httpClient != <span class="literal">null</span>) &#123;</span><br><span class="line">            httpClient.close();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> utils </category>
+          
+          <category> HttpUtils </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> utils </tag>
+            
+            <tag> HttpUtils </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Lombok</title>
+      <link href="/2023/03/05/Java%E6%A1%86%E6%9E%B6/Lombok/"/>
+      <url>/2023/03/05/Java%E6%A1%86%E6%9E%B6/Lombok/</url>
+      
+        <content type="html"><![CDATA[<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Lombok是一个可以大幅减少java模板代码的工具。</p><h1 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h1><h2 id="Data"><a href="#Data" class="headerlink" title="@Data"></a>@Data</h2><p>相当于@Setter + Getter + @ToString + @EqualsAndHashCode</p><h2 id="NoArgsConstructor"><a href="#NoArgsConstructor" class="headerlink" title="@NoArgsConstructor"></a>@NoArgsConstructor</h2><p>自动生成无参数构造函数。</p><h2 id="AllArgsConstructor"><a href="#AllArgsConstructor" class="headerlink" title="@AllArgsConstructor"></a>@AllArgsConstructor</h2><p>自动生成全参数构造函数。</p><h2 id="RequiredArgsConstructor"><a href="#RequiredArgsConstructor" class="headerlink" title="@RequiredArgsConstructor"></a>@RequiredArgsConstructor</h2><p>生成构造方法（可能带参数也可能不带参数），如果带参数，这参数只能是以final修饰的未经初始化的字段，或者是以@NonNull注解的未经初始化的字段。<br>@RequiredArgsConstructor(staticName &#x3D; “of”)会生成一个of()的静态方法，并把构造方法设置为私有的</p><h2 id="Setter-Getter"><a href="#Setter-Getter" class="headerlink" title="@Setter @Getter"></a>@Setter @Getter</h2><p>为字段生成Getter和Setter方法，可以注解到字段或者类上(注解在类上会为类中的所有字段生成Getter和Setter方法)，默认是public类型的，如果需要的话可以修改方法的访问级别。</p><h2 id="NonNull"><a href="#NonNull" class="headerlink" title="@NonNull"></a>@NonNull</h2><p>生成setter方法时会参数是否为空检查<br>为字段赋值时(即调用字段的setter方法时)，如果传的参数为null，则会抛出空异常NullPointerException</p><h2 id="ToString"><a href="#ToString" class="headerlink" title="@ToString"></a>@ToString</h2><p>生成toString()方法，默认情况下它会按顺序（以逗号分隔）打印你的类名称以及每个字段。<br>还可以设置不包含哪些字段,可以指定一个也可以指定多个@ToString(exclude &#x3D; “id”) &#x2F; @ToString(exclude &#x3D; {“id”,“name”})</p><p>如果继承的有父类的话，可以设置callSuper 让其调用父类的toString()方法，例如：@ToString(callSuper &#x3D; true)</p><h2 id="EqualsAndHashCode"><a href="#EqualsAndHashCode" class="headerlink" title="@EqualsAndHashCode"></a>@EqualsAndHashCode</h2><p>生成hashCode()和equals()方法，默认情况下，它将使用所有非静态，非transient字段。但可以通过在可选的exclude参数中来排除更多字段。或者，通过在of参数中命名它们来准确指定希望使用哪些字段。</p><h2 id="Value"><a href="#Value" class="headerlink" title="@Value"></a>@Value</h2><p>@Value 将字段都变成不可变类型：使用final修饰， 同时还包含@ToString、@EqualsAndHashCode、@AllArgsConstructor 、@Getter(注意只有Getter没有Setter)</p><h2 id="Log"><a href="#Log" class="headerlink" title="@Log"></a>@Log</h2><p>生成log对象，用于记录日志，可以通过topic属性来设置getLogger(String name)方法的参数 例如 @Log4j(topic &#x3D; “com.xxx.entity.User”)，默认是类的全限定名，即 类名.class，log支持以下几种：</p><ul><li>@Log java.util.logging.Logger</li><li>@Log4j org.apache.log4j.Logger</li><li>@Log4j2 org.apache.logging.log4j.Logger</li><li>@Slf4j org.slf4j.Logger</li><li>@XSlf4j org.slf4j.ext.XLogger</li><li>@CommonsLog org.apache.commons.logging.Log</li><li>@JBossLog org.jboss.logging.Logger</li></ul><h2 id="SneakyThrows"><a href="#SneakyThrows" class="headerlink" title="@SneakyThrows"></a>@SneakyThrows</h2><p>@SneakyThrows就是使用该注解后不需要担心Exception的异常处理。</p><p>总的来说，SneakyThrows注解就是减少了代码量，让代码看起来更加的整洁。</p><p>然后在编译的时候。Lombok会帮我们把try{}catch()再加上去。</p><h2 id="Synchronized"><a href="#Synchronized" class="headerlink" title="@Synchronized"></a>@Synchronized</h2><p>给方法加上同步锁</p><h2 id="Cleanup"><a href="#Cleanup" class="headerlink" title="@Cleanup"></a>@Cleanup</h2><p>用于确保已分配的资源被释放，自动帮我们调用close()方法。比如IO的连接关闭。<br>主要用来修饰 IO 流相关类, 会在 finally 代码块中对该资源进行 close();</p><h2 id="Getter-lazy-x3D-true"><a href="#Getter-lazy-x3D-true" class="headerlink" title="@Getter(lazy &#x3D; true)"></a>@Getter(lazy &#x3D; true)</h2><p>标注字段为懒加载字段，懒加载字段在创建对象时不会进行初始化，而是在第一次访问的时候才会初始化，后面再次访问也不会重复初始化</p><h2 id="Delegate"><a href="#Delegate" class="headerlink" title="@Delegate"></a>@Delegate</h2><p>为List类型的字段生成一大堆常用的方法，其实这些方法都是List中的方法</p><p>注意：一个类中只能使用一个@Delegate注解，因为使用多个会生成多个size()方法，从而会编译报错。</p><h2 id="Builder"><a href="#Builder" class="headerlink" title="@Builder"></a>@Builder</h2><p>@Builder 注解为类生成相对略微复杂的构建器 API</p><p>它作用于类，将其变成建造者模式<br>可以以链的形式调用<br>初始化实例对象生成的对象是不可以变的，可以在创建对象的时候进行赋值<br>如果需要在原来的基础上修改可以加 set 方法，final 字段可以不需要初始化<br>它会生成一个全参的构造函数</p><h3 id="编译前"><a href="#编译前" class="headerlink" title="编译前"></a>编译前</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="编译后"><a href="#编译后" class="headerlink" title="编译后"></a>编译后</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="keyword">private</span> String password;</span><br><span class="line">    </span><br><span class="line">    User(String username, String password) &#123;</span><br><span class="line">        <span class="built_in">this</span>.username = username;</span><br><span class="line">        <span class="built_in">this</span>.password = password;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> User.UserBuilder <span class="title function_">builder</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">User</span>.UserBuilder();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">class</span> <span class="title class_">UserBuilder</span> &#123;</span><br><span class="line">        <span class="keyword">private</span> String username;</span><br><span class="line">        <span class="keyword">private</span> String password;</span><br><span class="line">        </span><br><span class="line">        UserBuilder() &#123;&#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">public</span> User.UserBuilder <span class="title function_">username</span><span class="params">(String username)</span> &#123;</span><br><span class="line">            <span class="built_in">this</span>.username = username;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">public</span> User.UserBuilder <span class="title function_">password</span><span class="params">(String password)</span> &#123;</span><br><span class="line">            <span class="built_in">this</span>.password = password;</span><br><span class="line">            <span class="keyword">return</span> <span class="built_in">this</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">public</span> User <span class="title function_">build</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">User</span>(<span class="built_in">this</span>.username, <span class="built_in">this</span>.password);</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">toString</span><span class="params">()</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;User.UserBuilder(username=&quot;</span> + <span class="built_in">this</span>.username + <span class="string">&quot;, password=&quot;</span> + <span class="built_in">this</span>.password + <span class="string">&quot;)&quot;</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="SuperBuilder"><a href="#SuperBuilder" class="headerlink" title="@SuperBuilder"></a>@SuperBuilder</h2><p>@SuperBuilder解决了什么样的问题</p><p>将例子中的Ming这个类的成员属性放到父类当中：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Builder</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Ming</span> <span class="keyword">extends</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>这个时候，我们之前的调用的 .builder 都会报错，这是因为@Builder并不支持父类成员属性的构造，@SuperBuilder注解的出现，就是用来解决这个问题。</strong></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SuperBuilder</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SuperBuilder</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Ming</span> <span class="keyword">extends</span> <span class="title class_">Person</span>&#123;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>这样子类就可以正常获取到父类的成员属性进行builder构造了。</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> 框架 </category>
+          
+          <category> Lombok </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 框架 </tag>
+            
+            <tag> Lombok </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java编程思想-第1篇</title>
+      <link href="/2023/03/03/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3-%E7%AC%AC1%E7%AF%87/"/>
+      <url>/2023/03/03/Java%E7%BC%96%E7%A8%8B%E6%80%9D%E6%83%B3-%E7%AC%AC1%E7%AF%87/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> 书籍 </category>
+          
+          <category> Java编程思想 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> 书籍 </tag>
+            
+            <tag> Java编程思想 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Java常用工具包-StringUtils</title>
+      <link href="/2023/03/02/Java%E5%B7%A5%E5%85%B7%E5%8C%85/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-StringUtils/"/>
+      <url>/2023/03/02/Java%E5%B7%A5%E5%85%B7%E5%8C%85/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-StringUtils/</url>
+      
+        <content type="html"><![CDATA[<h1 id="待完成"><a href="#待完成" class="headerlink" title="待完成"></a>待完成</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> utils </category>
+          
+          <category> StringUtils </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> utils </tag>
+            
+            <tag> StringUtils </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Java常用工具包-Objects</title>
-      <link href="/2023/03/02/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-Objects/"/>
-      <url>/2023/03/02/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-Objects/</url>
+      <link href="/2023/03/02/Java%E5%B7%A5%E5%85%B7%E5%8C%85/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-Objects/"/>
+      <url>/2023/03/02/Java%E5%B7%A5%E5%85%B7%E5%8C%85/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-Objects/</url>
       
         <content type="html"><![CDATA[<h1 id="Objects"><a href="#Objects" class="headerlink" title="Objects"></a>Objects</h1><p>java.utils.Objects针对Object对象提供了几个静态的工具方法，这些方法可以归类为：</p><ol><li>null安全检查</li><li>对象比较</li><li>计算对象hash code</li><li>对象转换为String</li></ol><h1 id="Objects和Object的区别"><a href="#Objects和Object的区别" class="headerlink" title="Objects和Object的区别"></a>Objects和Object的区别</h1><p>Object 是 Java 中所有类的基类，位于java.lang包。所有对象（包括数组）都实现此类的方法。</p><p>Objects 【public final class Objects extends Object】是 Object 的工具类，位于java.util包。它从jdk1.7开始才出现，被final修饰不能被继承，拥有私有的构造函数。</p><p><strong>它由一些静态的实用方法组成，这些方法是null-save（空指针安全的）或null-tolerant（容忍空指针的），用于计算对象的hashcode、返回对象的字符串表示形式、比较两个对象。）</strong></p><h1 id="null安全检查"><a href="#null安全检查" class="headerlink" title="null安全检查"></a>null安全检查</h1><h2 id="isNull-Object-obj"><a href="#isNull-Object-obj" class="headerlink" title="isNull(Object obj)"></a>isNull(Object obj)</h2><p> 检查对象是否为null，null返回true，否则返回false</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">isNull</span><span class="params">(Object obj)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> obj == <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h2 id="nonNull-Object-obj"><a href="#nonNull-Object-obj" class="headerlink" title="nonNull(Object obj)"></a>nonNull(Object obj)</h2><p> 与isNull相反，检查对象是否为非null，非null返回true，否则返回false</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">nonNull</span><span class="params">(Object obj)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> obj != <span class="literal">null</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h2 id="requreNonNull"><a href="#requreNonNull" class="headerlink" title="requreNonNull"></a>requreNonNull</h2><p> 其他三个方法为参数不同requreNonNull，这三个方法要求对象为非null，否则抛出NullPointException。</p><h3 id="requireNonNull-T-obj"><a href="#requireNonNull-T-obj" class="headerlink" title="requireNonNull(T obj)"></a>requireNonNull(T obj)</h3><p> 检查指定类型的对象引用不为空null。当参数为null时，抛出空指针异常。设计这个方法主要是为了在方法、构造函数中做参数校验。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">requireNonNull</span><span class="params">(T obj)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (obj == <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">NullPointerException</span>();</span><br><span class="line">        <span class="keyword">return</span> obj;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h3 id="requireNonNull-T-obj-String-message"><a href="#requireNonNull-T-obj-String-message" class="headerlink" title="requireNonNull(T obj, String message)"></a>requireNonNull(T obj, String message)</h3><p> 该方法是requireNonNull的重载方法，当被校验的参数为null时，根据第二个参数message抛出自定义的异常消息。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">　<span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">requireNonNull</span><span class="params">(T obj, String message)</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> (obj == <span class="literal">null</span>)</span><br><span class="line">        <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">NullPointerException</span>(message);</span><br><span class="line">    <span class="keyword">return</span> obj;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h3 id="requireNonNull-T-obj-Supplier-messageSupplier"><a href="#requireNonNull-T-obj-Supplier-messageSupplier" class="headerlink" title="requireNonNull(T obj, Supplier messageSupplier)"></a>requireNonNull(T obj, Supplier messageSupplier)</h3><p> 检查指定的对象引用不为空null，如果是空，抛出自定义的空指针异常。从jdk1.8开始。</p><p> 与requireNonNull(Object, String)方法不同，本方法允许将消息的创建延迟，直到空检查结束之后。</p><p> 虽然在非空例子中这可能会带来性能优势， 但是决定调用本方法时应该小心，创建message supplier的开销低于直接创建字符串消息。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; T <span class="title function_">requireNonNull</span><span class="params">(T obj, Supplier&lt;String&gt; messageSupplier)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (obj == <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">NullPointerException</span>(messageSupplier.get());</span><br><span class="line">        <span class="keyword">return</span> obj;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h1 id="对象比较"><a href="#对象比较" class="headerlink" title="对象比较"></a>对象比较</h1><h2 id="equals"><a href="#equals" class="headerlink" title="equals"></a>equals</h2><p> 比较两个对象的时候，Object.equals方法容易抛出空指针异常。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Object</span> <span class="variable">a</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">b</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">a.equals(b);  <span class="comment">// 产生异常 java.lang.NullPointerException</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//a不能为空时，调用equals()方法</span></span><br></pre></td></tr></table></figure><p> 两个变量比较的时候，就都需要加非空判断。Objects.equals()方法做了非空判断，所以比较两个对象时，可以用Objects工具类的equals方法。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">工具类调用格式</span><br><span class="line"><span class="type">Object</span> <span class="variable">a</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line"><span class="type">String</span> <span class="variable">b</span> <span class="operator">=</span> <span class="literal">null</span>;</span><br><span class="line">Objects.equals(a,b); <span class="comment">// true  没有报错</span></span><br></pre></td></tr></table></figure><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">源代码如下：</span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">equals</span><span class="params">(Object a, Object b)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (a == b) || (a != <span class="literal">null</span> &amp;&amp; a.equals(b));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//a == b  先判断 它两是否为空，为空直接返回true结束, 不为空继续后面的语句</span></span><br><span class="line">    <span class="comment">// a != null 如果a为空的话，并且之前a==b 证明了两者不都为空，返回false结束。a不为空继续判断。</span></span><br><span class="line">    <span class="comment">// a.equals(b) 到进行判断时，a肯定是非空的，所以用这个Object的equals方法判断不会报空指针异常。</span></span><br></pre></td></tr></table></figure><h2 id="compare"><a href="#compare" class="headerlink" title="compare"></a>compare</h2><p> 如果两个参数相同则返回整数0。因此，如果两个参数都为空对象null，也是返回整数0。</p><p> 注意：如果其中一个参数是空对象null，是否会抛出空指针异常NullPointerException取决于排序策略，如果有的话，则由Comparator来决定空值null。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">源码</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> &lt;T&gt; <span class="type">int</span> <span class="title function_">compare</span><span class="params">(T a, T b, Comparator&lt;? <span class="built_in">super</span> T&gt; c)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (a == b) ? <span class="number">0</span> :  c.compare(a, b);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h2 id="deepEquals"><a href="#deepEquals" class="headerlink" title="deepEquals"></a>deepEquals</h2><p>深度比较两个对象。</p><p>当参数是数组对象，其方法内部采用的是Arrays.deepEquals0方法的算法。</p><p>使用Objects.deepEquals方法有个好处，当我们在写业务代码时，可以直接使用此方法来判断两个复杂类型，</p><p>比如使用了泛型的列表对象List、或者通过反射得到的对象，不清楚对象的具体类型。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">源码</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">boolean</span> <span class="title function_">deepEquals</span><span class="params">(Object a, Object b)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span> (a == b)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (a == <span class="literal">null</span> || b == <span class="literal">null</span>)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> Arrays.deepEquals0(a, b);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><h1 id="计算对象hash-code"><a href="#计算对象hash-code" class="headerlink" title="计算对象hash code"></a>计算对象hash code</h1><h2 id="hashCode"><a href="#hashCode" class="headerlink" title="hashCode"></a>hashCode</h2><p>返回一个整型数值，表示该对象的哈希码值。若参数对象为空，则返回整数0；若不为空，则直接调用了Object.hashCode方法。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">源码</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">(Object o)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> o != <span class="literal">null</span> ? o.hashCode() : <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>Object支持hashCode方法是为了提高哈希表（例如java.util.Hashtable 提供的哈希表）的性能。</p><p>以集合Set为例，当新加一个对象时，需要判断现有集合中是否已经存在与此对象相等的对象，如果没有hashCode()方法，需要将Set进行一次遍历，并逐一用equals()方法判断两个对象是否相等，此种算法时间复杂度为o(n)。通过借助于hasCode方法，先计算出即将新加入对象的哈希码，然后根据哈希算法计算出此对象的位置，直接判断此位置上是否已有对象即可。<br>（注：Set的底层用的是Map的原理实现）</p><h2 id="hash"><a href="#hash" class="headerlink" title="hash"></a>hash</h2><p>为一系列的输入值生成哈希码，该方法的参数是可变参数。</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Source code</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">hash</span><span class="params">(Object... values)</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> Arrays.hashCode(values);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>它是将所有的输入值都放到一个数组，然后调用Arrays.hashCode(Object[])方法来实现哈希码的生成。</p><p>对于当一个对象包含多个成员，重写Object.hashCode方法时，hash方法非常有用。</p><p>举个Java源码中的例子：</p><p>java.lang.invoke.MemberName 类，该类有Class&lt;?&gt; clazz、String name、Object type、int flags、Object resoulution这几个成员变量，该类的hashCode方法如下：</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">hashCode</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> Objects.hash(clazz, getReferenceKind(), name, getType());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure><p>警告:当提供的参数是一个对象的引用，返回值不等于该对象引用的散列码。这个值可以通过调用hashCode方法来计算。</p><h1 id="对象转换为String"><a href="#对象转换为String" class="headerlink" title="对象转换为String"></a>对象转换为String</h1><h2 id="toString-Object-o"><a href="#toString-Object-o" class="headerlink" title="toString(Object o)"></a>toString(Object o)</h2><p>返回指定对象的字符串表示形式。如果参数为空对象null，则返回字符串“null”。</p><p>该方法内部调用的是</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> String.valueOf(o);</span><br></pre></td></tr></table></figure><p>String.valueOf(Object obj)方法的内部实现为</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> (obj == <span class="literal">null</span>) ? <span class="string">&quot;null&quot;</span> : obj.toString();</span><br></pre></td></tr></table></figure><p>Object.toString()方法的内部实现为</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> getClass().getName() + <span class="string">&quot;@&quot;</span> + Integer.toHexString(hashCode());</span><br></pre></td></tr></table></figure><h2 id="toString-Object-o-String-nullDefault"><a href="#toString-Object-o-String-nullDefault" class="headerlink" title="toString(Object o, String nullDefault)"></a>toString(Object o, String nullDefault)</h2><p>　　<br>　　返回指定对象的字符串表示形式。如果参数为空对象null，则返回第二个参数nullDefault所指定的对象。</p><h1 id="全部方法"><a href="#全部方法" class="headerlink" title="全部方法"></a>全部方法</h1><p><img src="https://i.hd-r.cn/b5036f75da6c6fbc8e8e743e3a5659c4.png" alt="Objects"></p>]]></content>
       
@@ -29,39 +207,6 @@
             <tag> utils </tag>
             
             <tag> Objects </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Java常用工具包-StringUtils</title>
-      <link href="/2023/03/02/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-StringUtils/"/>
-      <url>/2023/03/02/Java%E5%B8%B8%E7%94%A8%E5%B7%A5%E5%85%B7%E5%8C%85-StringUtils/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-          <category> utils </category>
-          
-          <category> StringUtils </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> utils </tag>
-            
-            <tag> StringUtils </tag>
             
         </tags>
       
@@ -128,9 +273,42 @@
     
     
     <entry>
+      <title>JavaGUI-AWT&amp;SWING学习笔记</title>
+      <link href="/2023/02/20/JavaGUI-AWT&amp;SWING/"/>
+      <url>/2023/02/20/JavaGUI-AWT&amp;SWING/</url>
+      
+        <content type="html"><![CDATA[<h1 id="待完成"><a href="#待完成" class="headerlink" title="待完成"></a>待完成</h1>]]></content>
+      
+      
+      <categories>
+          
+          <category> Java </category>
+          
+          <category> JavaGUI </category>
+          
+          <category> AWT&amp;SWING </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JavaGUI </tag>
+            
+            <tag> AWT&amp;SWING </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Maven</title>
-      <link href="/2023/02/20/Maven/"/>
-      <url>/2023/02/20/Maven/</url>
+      <link href="/2023/02/20/Java%E6%A1%86%E6%9E%B6/Maven/"/>
+      <url>/2023/02/20/Java%E6%A1%86%E6%9E%B6/Maven/</url>
       
         <content type="html"><![CDATA[<h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1>]]></content>
       
@@ -162,8 +340,8 @@
     
     <entry>
       <title>Mybatis</title>
-      <link href="/2023/02/20/Mybatis/"/>
-      <url>/2023/02/20/Mybatis/</url>
+      <link href="/2023/02/20/Java%E6%A1%86%E6%9E%B6/Mybatis/"/>
+      <url>/2023/02/20/Java%E6%A1%86%E6%9E%B6/Mybatis/</url>
       
         <content type="html"><![CDATA[<h1 id="Mybatis"><a href="#Mybatis" class="headerlink" title="Mybatis"></a>Mybatis</h1>]]></content>
       
@@ -182,39 +360,6 @@
             <tag> Java </tag>
             
             <tag> 框架 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JavaGUI-AWT&amp;SWING学习笔记</title>
-      <link href="/2023/02/20/JavaGUI-AWT&amp;SWING/"/>
-      <url>/2023/02/20/JavaGUI-AWT&amp;SWING/</url>
-      
-        <content type="html"><![CDATA[<h1 id="待完成"><a href="#待完成" class="headerlink" title="待完成"></a>待完成</h1>]]></content>
-      
-      
-      <categories>
-          
-          <category> Java </category>
-          
-          <category> JavaGUI </category>
-          
-          <category> AWT&amp;SWING </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Java </tag>
-            
-            <tag> JavaGUI </tag>
-            
-            <tag> AWT&amp;SWING </tag>
             
         </tags>
       
@@ -282,8 +427,8 @@
     
     <entry>
       <title>Maven项目中的pom.xml</title>
-      <link href="/2023/01/21/Maven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84pom.xml/"/>
-      <url>/2023/01/21/Maven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84pom.xml/</url>
+      <link href="/2023/01/21/Java%E6%A1%86%E6%9E%B6/Maven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84pom.xml/"/>
+      <url>/2023/01/21/Java%E6%A1%86%E6%9E%B6/Maven%E9%A1%B9%E7%9B%AE%E4%B8%AD%E7%9A%84pom.xml/</url>
       
         <content type="html"><![CDATA[<h1 id="Maven"><a href="#Maven" class="headerlink" title="Maven"></a>Maven</h1>]]></content>
       
