@@ -4,6 +4,48 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2024/03/26/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E5%AE%9A%E4%B9%89%E5%88%A4%E6%96%AD/"/>
+      <url>/2024/03/26/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E5%AE%9A%E4%B9%89%E5%88%A4%E6%96%AD/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>判断推理-图形推理</title>
+      <link href="/2024/03/24/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86/"/>
+      <url>/2024/03/24/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E5%9B%BE%E5%BD%A2%E6%8E%A8%E7%90%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="图形推理-做题思路"><a href="#图形推理-做题思路" class="headerlink" title="图形推理-做题思路"></a>图形推理-做题思路</h1><p>两步走：元素组成定大方向，特征图定细节考点</p><ul><li>元素组成相同<ul><li>位置规律：平移、旋转、翻转</li></ul></li><li>元素组成相似<ul><li>样式规律：加减同异、黑白运算、遍历</li></ul></li><li>元素组成不同<ul><li>属性规律： 对称、曲直、开闭</li><li>数量规律：点、线、面、角、素</li></ul></li></ul><h1 id="高频考点一：对称性"><a href="#高频考点一：对称性" class="headerlink" title="高频考点一：对称性"></a>高频考点一：对称性</h1><h2 id="考法"><a href="#考法" class="headerlink" title="考法"></a>考法</h2><ol><li>区分对称类型（轴&#x2F;中心&#x2F;轴+中心）</li><li>细化考对称轴（数量、方向、与图形的位置关系）</li><li>多部分对称图形组成（分别画出对称轴看关系）</li></ol><h2 id="解题方法"><a href="#解题方法" class="headerlink" title="解题方法"></a>解题方法</h2><p>基本考法-特征图：</p><ol><li>轴对称：等边、等腰三角形、箭头、两侧一样</li><li>中心对称：S、N、Z、平行四边形、大风车、两个相同图形反着放</li><li>轴对称+中心对称：有两条互相垂直的对称轴</li></ol><p>轴对称的细化：</p><ol><li>多条对称轴先看数量，尤其是“三足鼎立”图形、正多边形</li><li>一条对称轴先看方向。再看和图形的关系，对称轴经过了什么，考虑 线（重合、垂直）、点、面<ol><li>线条 重合&#x2F;不重合&#x2F;平行（正中有线）</li><li>面（窟窿多）</li><li>点（明显“尖角”）</li></ol></li><li>多个对称图形组合而成，拆开画对称轴，找关系<ul><li>内外分开，左右分开，上下分开</li><li>补充：若非对称性，则考虑图形间关系</li></ul></li></ol><p>轴对称的创新考法–结合黑白球</p><ul><li>对称性-黑球较为规整，优先考虑（可整体可分开）</li><li>小难点：整体不行要分开黑白，单独考虑</li><li>补充：黑白球的考法有位置、黑白运算、<em><strong>对称</strong></em>。</li></ul><h1 id="高频考点二：面、线、点"><a href="#高频考点二：面、线、点" class="headerlink" title="高频考点二：面、线、点"></a>高频考点二：面、线、点</h1><h2 id="面"><a href="#面" class="headerlink" title="面"></a>面</h2><ul><li>面的特征图：<ol><li>图形被分割、封闭面明显</li><li>生活化图形、粗线条图形中留空白区域</li></ol></li><li>考法：<ul><li>常规考法：面的数量</li><li>细化考法：<ol><li>所有面的形状（三角形、四边形）</li><li>相同面的数量（大小、形状都相同）</li><li>最大&#x2F;最小面对形状（几边形&#x2F;与外框结合考察）、属性</li></ol></li></ul></li></ul><p>什么时候想细化？出现数面特征，整体无规律或选不出唯一答案</p><h2 id="线"><a href="#线" class="headerlink" title="线"></a>线</h2><p>怎么算一根线？**平滑的、没有拐点（折点）点叫一根线 **<br>注意： 线不等于线段</p><ul><li>常规考法：<ol><li>直线的特征图：多边形、单一直线</li><li>曲线点特征图：曲线图形（全曲线图、圆、弧）</li></ol></li><li>细化考法：先 分开看，后运算<ol><li>曲直分开</li><li>内外分开（出现明显外框）</li><li>横竖分开（出现横屏竖直）</li></ol></li><li>创新考法：平行线的组数</li></ul><h2 id="笔画数"><a href="#笔画数" class="headerlink" title="笔画数"></a>笔画数</h2><ul><li>概念<ul><li>判定一笔画：线条之间连通，且奇点数为0或2</li><li>笔画数&#x3D;奇点数 &#x2F; 2（奇点一定是偶数）</li><li>注意：端点也是奇点</li></ul></li><li>特征图：<ul><li>五角星、圆相交&#x2F;相切、“日”、“田”、明显端点</li><li>新趋势：明显端点</li></ul></li><li>小技巧：<ul><li>连通图：外框+N笔画&#x3D;N笔画</li><li>常见奇点：端点、丁字路口</li></ul></li></ul><h2 id="点"><a href="#点" class="headerlink" title="点"></a>点</h2><ul><li>概念：<ul><li>线与线点交点数量（切点数交点；端点不是交点）</li></ul></li><li>特征图：<ul><li>线条较差明显（大树杈）</li><li>乱糟糟一团线</li><li>相切较多</li></ul></li><li>细化考法：<ul><li>切点（图形相切明显）</li><li>曲直交点（曲线和直线相交明显）</li><li>内外交点（所有图都有明显外框）<ul><li>分为框上、框内、框外上交点</li><li>框上的图形比较<strong>简单</strong>，框内的图形比较<strong>乱</strong></li></ul></li></ul></li></ul><p><em><strong>笔画数和交点互为备胎</strong></em></p><h2 id="曲线"><a href="#曲线" class="headerlink" title="曲线"></a>曲线</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202403252232704.png" alt="image.png"></p><h1 id="高频考点三：样式规律"><a href="#高频考点三：样式规律" class="headerlink" title="高频考点三：样式规律"></a>高频考点三：样式规律</h1><h2 id="加减同异"><a href="#加减同异" class="headerlink" title="加减同异"></a>加减同异</h2><p>加减同异–相同线条重复出现</p><p>细化考法：</p><ul><li>旋转+求同&#x2F;求异</li><li>一半求同，另一半求异</li></ul><h1 id="高频考点四：位置规律"><a href="#高频考点四：位置规律" class="headerlink" title="高频考点四：位置规律"></a>高频考点四：位置规律</h1><ul><li>图形特征：元素组成相同（略有不同）</li><li>常见考法：平移、旋转、翻转</li></ul><h2 id="平移"><a href="#平移" class="headerlink" title="平移"></a>平移</h2><ul><li>平移难点1：移动轨迹分不清<ul><li>16宫格，先圈中间，看有无规律</li><li>有规律，则内外分开回字看</li><li>无规律，则横竖分开看。<ul><li>上下（竖行）竖列黑块不变，左右（横行）横行黑块不变</li><li>走到头怎么办？1⃣️循环走2⃣️反弹走</li></ul></li></ul></li><li>平移难点2：找不到移动元素<ul><li>空格移动</li><li>端点移动</li><li>顶点移动</li></ul></li></ul><p>黑球个数一样，则是位置。黑球个数不一样，则是黑白运算</p><h1 id="高频考点五：空间重构"><a href="#高频考点五：空间重构" class="headerlink" title="高频考点五：空间重构"></a>高频考点五：空间重构</h1><ul><li>解题思维：排除法</li><li>解题方法：<ol><li>相对面<ul><li>同行或同列相隔一个面</li><li>Z字形两端（紧邻Z字中线的面）</li></ul></li><li>相邻面（相对位置法、画边法）<ol><li>公共边：<ol><li>平面图中直接相邻的两个面的公共边</li><li>平面图中构成直角的两个边上同一条边</li><li>一排4个面，两头的两条边上同一条边</li></ol></li><li>公共点：<ol><li>三个图挨着</li></ol></li><li>画边法（没有明显指向的面）<ol><li>结合选项，找一个特殊面的唯一点</li><li>顺时针方向画边，并标出序号</li><li>题干与选项对应：面不一致排除</li></ol></li></ol></li></ol></li></ul><h1 id="考点：立体类"><a href="#考点：立体类" class="headerlink" title="考点：立体类"></a>考点：立体类</h1><h2 id="截面图"><a href="#截面图" class="headerlink" title="截面图"></a>截面图</h2><p>截面图：指“刀”经过的面的形状</p><p>警惕：三角形和梯形、圆和椭圆</p><h2 id="立体拼合"><a href="#立体拼合" class="headerlink" title="立体拼合"></a>立体拼合</h2><p>解题原则：<br>凹凸对应：有凹必有凸，有凸必有凹</p><p>俄罗斯方块拼合（优先不转）</p><ol><li>先看选项：决定是否数数</li><li>按层拼合：挑大的、规整的拼</li></ol><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202403262353701.png" alt="image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> gwy </category>
+          
+          <category> 判断推理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gwy </tag>
+            
+            <tag> 判断推理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SpringBoot 代码优雅之道</title>
       <link href="/2024/03/17/Blogs/Java/%E5%B7%A5%E5%85%B7%E5%8C%85/SpringBoot%20%E4%BB%A3%E7%A0%81%E4%BC%98%E9%9B%85%E4%B9%8B%E9%81%93/"/>
       <url>/2024/03/17/Blogs/Java/%E5%B7%A5%E5%85%B7%E5%8C%85/SpringBoot%20%E4%BB%A3%E7%A0%81%E4%BC%98%E9%9B%85%E4%B9%8B%E9%81%93/</url>
