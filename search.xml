@@ -4,6 +4,77 @@
   
     
     <entry>
+      <title>资料分析</title>
+      <link href="/2024/05/09/Blogs/%E8%80%83%E5%85%AC/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/"/>
+      <url>/2024/05/09/Blogs/%E8%80%83%E5%85%AC/%E8%B5%84%E6%96%99%E5%88%86%E6%9E%90/</url>
+      
+        <content type="html"><![CDATA[<h1 id="知识总结"><a href="#知识总结" class="headerlink" title="知识总结"></a>知识总结</h1><h1 id="速算技巧"><a href="#速算技巧" class="headerlink" title="速算技巧"></a>速算技巧</h1><ol><li>截位直除</li><li>分数比较</li></ol><h2 id="截位直除"><a href="#截位直除" class="headerlink" title="截位直除"></a>截位直除</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092203893.png" alt="image.png"></p><h2 id="分数比较"><a href="#分数比较" class="headerlink" title="分数比较"></a>分数比较</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092203275.png" alt="image.png"></p><h1 id="基期与现期"><a href="#基期与现期" class="headerlink" title="基期与现期"></a>基期与现期</h1><p>基本术语：</p><ul><li>基期量与现期量：时间靠前的为基期，时间靠后的为现期</li><li>增长量与增长率：<ul><li>增长量：用来表述基期量与现期量的绝对量。如增长50元</li><li>增长率：用来表述基期量与现期量的相对量。如增长50%，r&#x3D;50%</li></ul></li><li>同比与环比：<ul><li>同比：一般与上年同一时期相比较</li><li>环比：与相邻的上一个时期相比较</li></ul></li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092207888.png" alt="image.png"></p><h1 id="一般增长率"><a href="#一般增长率" class="headerlink" title="一般增长率"></a>一般增长率</h1><p>基本术语：</p><ul><li>增长率：增长率是用来表述基期量与现期量变化的相对量。增长率又称增速，增幅或者增长幅度、增值率。增长率为负时表示下降，下降率也可直接写成负的增长率</li><li>百分数与百分点<ul><li>百分数：用来反映量之间的比例关系</li><li>百分点：用来反映百分数的变化</li></ul></li><li>增长率与倍数<ul><li>增长率指比基数多出的比率，倍数指两数的直接比值</li><li>若A是B的n倍，则 n &#x3D; r + 1</li></ul></li><li>成数与翻番<ul><li>成数：几成相当于十分之几</li><li>翻番：翻一番为原来的2倍；翻两番为原来的4倍</li></ul></li><li>增幅、降幅与变化幅度<ul><li>增幅一般就是指增长率，有正有负</li><li>降幅指下降的幅度，降幅比较大小时，只比较增长率的绝对值（前提必须是下降）</li><li>变化幅度指增长或下降的绝对比率，变化幅度比较大小时用增长率的绝对值</li></ul></li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092218034.png" alt="image.png"></p><h2 id="计算"><a href="#计算" class="headerlink" title="计算"></a>计算</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405032047725.png" alt="image.png"></p><h2 id="比较"><a href="#比较" class="headerlink" title="比较"></a>比较</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405032235174.png" alt="image.png"></p><h2 id="特殊计算"><a href="#特殊计算" class="headerlink" title="特殊计算"></a>特殊计算</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405042046521.png" alt="image.png"></p><h1 id="增长量"><a href="#增长量" class="headerlink" title="增长量"></a>增长量</h1><p>基本术语：</p><ul><li>增长量：表述基期量与现期量变化的绝对量</li><li>年均增长量 &#x3D; （现期量 - 基期量）&#x2F; 年份差</li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092221913.png" alt="image.png"></p><h2 id="计算-1"><a href="#计算-1" class="headerlink" title="计算"></a>计算</h2><p>1 百化分<br>2 套公式</p><p>增长量 &#x3D; 现期 &#x2F; （n + 1）<br><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405031538709.png" alt="image.png"></p><h2 id="比较-1"><a href="#比较-1" class="headerlink" title="比较"></a>比较</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405041138590.png" alt="image.png"></p><h2 id="年均增长量"><a href="#年均增长量" class="headerlink" title="年均增长量"></a>年均增长量</h2><p>年份差如何确定<br><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405042016695.png" alt="image.png"></p><h1 id="比重"><a href="#比重" class="headerlink" title="比重"></a>比重</h1><p>基本术语：</p><ul><li>比重：指部分在总体中所占的比率，贡献率、利润率等术语也可以看成比重</li><li>增长贡献率：指部分增量在总体增量所占的比例</li><li>资料分析中的利润率特指利润在收入中的占比</li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092223567.png" alt="image.png"></p><h2 id="现期比重"><a href="#现期比重" class="headerlink" title="现期比重"></a>现期比重</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405031551380.png" alt="image.png"></p><h2 id="基期比重"><a href="#基期比重" class="headerlink" title="基期比重"></a>基期比重</h2><h2 id="两期比重"><a href="#两期比重" class="headerlink" title="两期比重"></a>两期比重</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405050931295.png" alt="image.png"></p><h2 id="两期比例"><a href="#两期比例" class="headerlink" title="两期比例"></a>两期比例</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405031717574.png" alt="image.png"></p><h1 id="平均数"><a href="#平均数" class="headerlink" title="平均数"></a>平均数</h1><p>基本术语：</p><ul><li>平均数指多个数的平均值，即总和&#x2F;个数；</li><li>也可指两个量的比例。如人均收入&#x3D;收入&#x2F;人数</li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092226183.png" alt="image.png"></p><h2 id="现期平均数"><a href="#现期平均数" class="headerlink" title="现期平均数"></a>现期平均数</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405031552664.png" alt="image.png"></p><h2 id="基期平均数"><a href="#基期平均数" class="headerlink" title="基期平均数"></a>基期平均数</h2><h2 id="两期平均数"><a href="#两期平均数" class="headerlink" title="两期平均数"></a>两期平均数</h2><p>平均数的增长率<br><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405050958661.png" alt="image.png"></p><h1 id="倍数"><a href="#倍数" class="headerlink" title="倍数"></a>倍数</h1><p>基本术语：</p><ul><li>倍数用来表示两个量的相对关系</li><li>若A是B的n倍，则 n &#x3D; r + 1</li></ul><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092227589.png" alt="image.png"></p><h2 id="现期倍数"><a href="#现期倍数" class="headerlink" title="现期倍数"></a>现期倍数</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405031726693.png" alt="image.png"></p><h2 id="基期倍数"><a href="#基期倍数" class="headerlink" title="基期倍数"></a>基期倍数</h2><h1 id="特殊增长率"><a href="#特殊增长率" class="headerlink" title="特殊增长率"></a>特殊增长率</h1><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405092229659.png" alt="image.png"></p><h2 id="间隔增长率"><a href="#间隔增长率" class="headerlink" title="间隔增长率"></a>间隔增长率</h2><h2 id="年均增长率"><a href="#年均增长率" class="headerlink" title="年均增长率"></a>年均增长率</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202405042015798.png" alt="image.png"></p><h2 id="混合增长率"><a href="#混合增长率" class="headerlink" title="混合增长率"></a>混合增长率</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> gwy </category>
+          
+          <category> 资料分析 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gwy </tag>
+            
+            <tag> 资料分析 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2024/04/20/Blogs/%E8%80%83%E5%85%AC/%E9%80%BB%E8%BE%91%E5%A1%AB%E7%A9%BA/"/>
+      <url>/2024/04/20/Blogs/%E8%80%83%E5%85%AC/%E9%80%BB%E8%BE%91%E5%A1%AB%E7%A9%BA/</url>
+      
+        <content type="html"><![CDATA[<p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404201050007.png" alt="image.png"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>数量关系</title>
+      <link href="/2024/04/04/Blogs/%E8%80%83%E5%85%AC/%E6%95%B0%E9%87%8F%E5%85%B3%E7%B3%BB/"/>
+      <url>/2024/04/04/Blogs/%E8%80%83%E5%85%AC/%E6%95%B0%E9%87%8F%E5%85%B3%E7%B3%BB/</url>
+      
+        <content type="html"><![CDATA[<h1 id="第一节-代入排除法"><a href="#第一节-代入排除法" class="headerlink" title="第一节 代入排除法"></a>第一节 代入排除法</h1><h2 id="什么时候代"><a href="#什么时候代" class="headerlink" title="什么时候代"></a>什么时候代</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042251771.png" alt="image.png"></p><h2 id="怎么代"><a href="#怎么代" class="headerlink" title="怎么代"></a>怎么代</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042252464.png" alt="image.png"></p><h1 id="第二节-倍数特性法"><a href="#第二节-倍数特性法" class="headerlink" title="第二节 倍数特性法"></a>第二节 倍数特性法</h1><h2 id="整除判定方法"><a href="#整除判定方法" class="headerlink" title="整除判定方法"></a>整除判定方法</h2><ul><li>3 &#x2F; 9：看各位之和能否被3 &#x2F; 9 整除</li><li>4: 看末两位能否被4整除</li><li>8: 看末三位能否被8整除</li></ul><h2 id="比例转化的无脑方法"><a href="#比例转化的无脑方法" class="headerlink" title="比例转化的无脑方法"></a>比例转化的无脑方法</h2><p>即：谁比谁，就谁除以谁，分母不懂，分子：多则加、少则减</p><p>A比B多3&#x2F;7，A&#x2F;B&#x3D;（3+7）&#x2F;7 &#x3D; 10 &#x2F; 7<br>男比女少3&#x2F;10，则男&#x2F;女&#x3D;7&#x2F;10</p><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042315374.png" alt="image.png"></p><h1 id="第三节-方程法"><a href="#第三节-方程法" class="headerlink" title="第三节 方程法"></a>第三节 方程法</h1><h2 id="普通方程"><a href="#普通方程" class="headerlink" title="普通方程"></a>普通方程</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042326216.png" alt="image.png"></p><h2 id="不定方程（组）"><a href="#不定方程（组）" class="headerlink" title="不定方程（组）"></a>不定方程（组）</h2><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042326328.png" alt="image.png"></p><h1 id="第四节-工程问题"><a href="#第四节-工程问题" class="headerlink" title="第四节 工程问题"></a>第四节 工程问题</h1><p>主要公式：总量&#x3D;效率*时间</p><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042328105.png" alt="image.png"></p><h2 id="如何找最小公倍数"><a href="#如何找最小公倍数" class="headerlink" title="如何找最小公倍数"></a>如何找最小公倍数</h2><p><strong>短除法</strong></p><h2 id="牛吃草问题"><a href="#牛吃草问题" class="headerlink" title="牛吃草问题"></a>牛吃草问题</h2><ul><li>识别：排比句式，有增长，有消耗</li><li>方法（套公式）：原草&#x3D;（牛-草）*时间</li><li>快速解题模版：草 &#x3D; （牛1*天1 - 牛2*天2）&#x2F;（天1-天2）</li></ul><h1 id="第五节-行程问题"><a href="#第五节-行程问题" class="headerlink" title="第五节 行程问题"></a>第五节 行程问题</h1><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404042356754.png" alt="image.png"></p><h1 id="第六节-经济利润问题"><a href="#第六节-经济利润问题" class="headerlink" title="第六节 经济利润问题"></a>第六节 经济利润问题</h1><ol><li>基础经济：方法破题，考查重点</li><li>分段计费：套路题</li><li>函数最值：送分题</li></ol><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404061016950.png" alt="image.png"></p><h1 id="第七节-最值问题"><a href="#第七节-最值问题" class="headerlink" title="第七节 最值问题"></a>第七节 最值问题</h1><p>最值问题是考查思维</p><ol><li>构造数列(和定最值)：考查多</li><li>多集合反向构造：考查少，送分题</li><li>最不利：考查少</li></ol><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404061052038.png" alt="image.png"></p><h1 id="第八节-排列组合与概率问题"><a href="#第八节-排列组合与概率问题" class="headerlink" title="第八节 排列组合与概率问题"></a>第八节 排列组合与概率问题</h1><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404061135668.png" alt="image.png"></p><h2 id="错位重排"><a href="#错位重排" class="headerlink" title="错位重排"></a>错位重排</h2><p>概念：每个厨师做一道菜，每个人都不吃自己的，有几种情况</p><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404061136796.png" alt="image.png"></p><h2 id="跟屁虫原理"><a href="#跟屁虫原理" class="headerlink" title="跟屁虫原理"></a>跟屁虫原理</h2><p>1.两个主体有相同的目标（目的），求概率，<br>    方法：任意固定一个，只求另外一个满足的概率即可。<br>2.如 A、B、C、D 四个选项，甲和乙蒙同一个答案的概率为多少？<br>答：（1）任意固定一个，甲先选，假设选 B 项。（2）乙选择的时候，有 4 种<br>选择，其中有 1 个 B 项和甲相同，概率为 1&#x2F;4。</p><h1 id="第九节-容斥原理问题"><a href="#第九节-容斥原理问题" class="headerlink" title="第九节 容斥原理问题"></a>第九节 容斥原理问题</h1><p><img src="https://raw.githubusercontent.com/yilan0916/picture/main/202404061154809.png" alt="image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> gwy </category>
+          
+          <category> 数量关系 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gwy </tag>
+            
+            <tag> 数量关系 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>判断推理-类比推理</title>
       <link href="/2024/03/31/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E7%B1%BB%E6%AF%94%E6%8E%A8%E7%90%86/"/>
       <url>/2024/03/31/Blogs/%E8%80%83%E5%85%AC/%E5%88%A4%E6%96%AD%E6%8E%A8%E7%90%86-%E7%B1%BB%E6%AF%94%E6%8E%A8%E7%90%86/</url>
